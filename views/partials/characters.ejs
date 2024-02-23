@@ -1,0 +1,10 @@
+<div class="characters">
+    <% console.log(locals.characters) %>
+    <% if (locals.characters) { %>
+        <% locals.characters.forEach(character => { %>
+            <p><span>Name: <%- character.name %></span></p>
+            <p><span>Role: <%- character.role %></span></p>
+            <p><span>Weapon: <%- character.weapon %></span></p>
+        <% }); %>
+    <% } %>
+</div>
